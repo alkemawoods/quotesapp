@@ -11,3 +11,12 @@ exports.getRandomQuote = function(req, res) {
     res.json(randQuote);
   });
 };
+
+exports.addQuote = function(req, res) {
+  var newQuote = new Quote(req.body);
+  newQuote.save(function(err, quote) {
+    if(err)
+      res.send(err);
+    res.json(quote);
+  });
+};

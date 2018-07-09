@@ -4,4 +4,5 @@ module.exports = function(app) {
 
   app.route('/quote')
     .get(quote.getRandomQuote)
+    .post(quote.addQuote)
 };
