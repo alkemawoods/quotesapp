@@ -2,10 +2,13 @@
   "name": "quotesapp",
   "version": "1.0.0",
   "description": "Generate random quote from database to display on my webpage",
+  "engines": {
+    "node": "6.11.1"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,4 @@
     "mongoose": "^5.10.15",
     "npm": "^6.14.8"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
-  }
 }
