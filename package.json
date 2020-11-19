@@ -31,7 +31,5 @@
     "express": "^4.16.3",
     "mongoose": "^5.1.6",
     "npm": "^6.1.0"
-  },
-  "devDependencies": {
   }
 }
